@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management System</h1>
+
+    <!-- Admin Section -->
+    <div id="admin-panel">
+      <h2>Add a New Product</h2>
+      <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="text" id="product-quantity" placeholder="Product Quantity" required>
+        <input type="number" id="product-price" step="any" placeholder="Product Price" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+
+    <hr>
+
+    <!-- Product List -->
+    <div id="product-list-panel">
+      <h2>Product List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <!-- Product items will appear here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="Product.js"></script>
+</body>
+</html>
